@@ -1,0 +1,52 @@
+
+
+
+
+<div class="login-block-header"></div>
+<div class="register-body">
+<div class="register-block-image"></div>
+ <h1>User Registration</h1>
+<div class="demo-app-logo"></div>
+<div class="demo-app-logo_text"><span style="text-align:center; font-size: 18px; font-weight: normal; color: #6f6f6f; font-family: proxima-nova, sans-serif; margin-left: 6px;">Welcome to</span> <br/> <span style="text-align:center; font-size: 24px; font-weight: normal; color: #0c78b0; font-family: proxima-nova, sans-serif;">Demo App</span></div>
+
+<div class="register-block" >
+
+<div class="register-block" style="background-color: #E6E6E6;">
+   <h2>Please complete the form below</h2>
+   
+       <h4>Personal Details</h4>
+		<input type="text" value="" placeholder="username" id="username" ng-model="user.userName"/>
+		<input type="password" value="" placeholder="Password" id="password" ng-model="user.password"/>
+		<input type="password" value="" placeholder="Confirm Password" id="password" />
+			<h4>User Details</h4> 
+             <input id="firstname" name="firstname" placeholder="First Name" required="" type="text" ng-model="customer.customerFirstName">
+             <input  id="lastname" name="lastname" placeholder="Last Name" required="" type="text" ng-model="customer.customerLastName">
+			 <input id="addressfirstline" name="addressfirstline" placeholder="Address First Line" required="" type="text" ng-model="address.addressFirstLine">
+			 <input id="addresssecondline" name="addresssecondline" placeholder="Address Second Line" type="text" ng-model="address.addressSecondLine">
+			 <input id="city" name="city" placeholder="City" required=""type="text" ng-model="address.city">
+			 <!-- <select onchange="print_state('state',this.selectedIndex);" id="country" name ="country" required=""></select> -->
+			 
+			 <select onchange="print_state('state',this.selectedIndex);" id="country" name ="country" required="" ng-model="address.country">
+			 	<!-- <option data-ng-repeat="country in countryList"></option> -->
+			 </select>
+			 
+			 <select name ="state" id ="state" name ="state" required="" ng-model="address.state">
+			 	<option value="state" >Select State</option>
+			 </select>
+			 
+			 {{print_country("country")}}
+			 <input id="zipcode" name="zipcode" placeholder="ZipCode" required="" type="text" ng-model="address.zipCode">
+ 
+    <div class="register_block_button" ng-click="registerUser()"></div>
+    </div> 
+	</div>
+</div>
+</div>
+
+
+<div class="login-page-footer">
+<p style="color: #484949; font-family: proxima-nova, sans-serif; font-weight: normal; font-size: 14px; text-align: center;">Copyright © 2012-2015 VMware, Inc. All rights reserved.
+</p>
+</div>
+
+

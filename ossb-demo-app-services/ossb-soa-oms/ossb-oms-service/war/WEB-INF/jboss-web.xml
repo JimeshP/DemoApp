@@ -1,0 +1,3 @@
+<jboss-web>
+  <context-root>ossb-oms-service</context-root>
+</jboss-web>

@@ -1,0 +1,111 @@
+<div>
+<style>
+
+body {
+    background-image: url("images/page_background_inner.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+header {
+    margin: -8px;
+    padding: 20px;
+}
+
+</style>
+<script data-require="angular.js@1.4.6" data-semver="1.4.6"
+	src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.6/angular.min.js"></script>
+<script data-require="angular-route@*" data-semver="1.4.6"
+	src="https://code.angularjs.org/1.4.6/angular-route.js"></script>
+<script type="text/javascript" src="script/app.js"></script>
+<script type="text/javascript" src="script/vraservices.js"></script>
+<script type="text/javascript" src="script/vrademo.js"></script>
+   
+  <div ng-include="'cartbar.html'"></div>
+  <br>
+  <br>
+    <table style="width: 1060px; height: 256px;">
+      <tbody>
+        <tr>
+          <td style="width: 148.5px;">
+            <div style="background-color: white; height: 477px; margin: 0 21px;">
+              <nav class="vertical">
+                <ul>
+                  <li><img id="userimagestyle" alt="userimage" src="images/profilepic.png">
+                  </li>
+                  <li id="welcometextstyle">Welcome {{customerInfo.userName}}</li> 
+                  <li><a ng-click="menuclicked('Skateboard')">Skateboard</a></li>                  		
+                  <li> <a ng-click="menuclicked('Decks')">Decks</a> </li>
+                  <li> <a ng-click="menuclicked('Wheels')">Wheels</a> </li>
+                </ul>
+              </nav>
+            </div>
+          </td>
+          <td style="width:10px;"><br>
+          </td>
+          <td style="width: 900.5px;">
+            <div style="background-color: white; height: 477px; margin: 0 21px;">
+              <table style="width: 900px; height: 55px; border: 1px; border-color: #d8d8d8">
+                <tbody>
+                  <tr>
+                    <td id="innertoolbarstyle">
+                    	<img src="images/{{menuname}}_icon.png">
+                    	{{menuname}}
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table style="width: 900px; height: 40px;">
+                <tbody>
+                  <tr>
+                    <td>
+                    <div class="pagination pagination-centered" ng-show="productList.length">
+                     <img id="previmagestyle" ng-click="curPage == 0 || previousPage()" ng-disabled="curPage == 0" alt="previmage" src="images/prev_img.png">
+                     <img id="nextimagestyle" ng-click=" curPage >= results.length/pageSize - 1 || nextPage()" ng-disabled="curPage >= results.length/pageSize - 1" alt="nextimage" src="images/next_img.png">
+                    </td>
+                    </div>
+                  </tr>
+                </tbody>
+              </table>
+              <div id="productslisting" class="pagination pagination-centered" ng-show="productList.length">
+                <br>
+                <table style="width: 100%;">
+                  <tbody>
+                    <tr>
+                
+               <td ng-repeat="x in results = (productList | filter:menuNameSelect) | pagination: curPage * pageSize | limitTo: pageSize" style="border: 1px solid #ccc;">
+                             
+                  <table id="tableborderstyle" style="width: 209px; height: 160px;">
+                          <tbody>
+                            <tr>
+                              <td><img id="productimgstyle" title="Prod" alt="Prod"
+
+                                  src="images/{{x.productName}}.png">
+                              </td>
+                            </tr>
+                            <tr>                        
+                              <td style='text-align:center;vertical-align:middle'><label id="welcomelabelstyle">{{ x.productName }}</label></td>            
+                            </tr>
+                            <tr>
+                              <td style="border-top: 1px solid #ccc;">
+                              	<button id="cartbuttonstyle" type="button" value="Add to cart" name="addtocart" ng-click="addProductToCart(x)">ADD TO CART</button>
+                               	<label for="prodprice1" form="listproduct">{{ x.productPriceBVOList[0].pricePerUnit | currency}}</label></td>
+                            </tr>
+                        </tbody>
+                    </table>
+				</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+<div class="login-page-footer">
+<footer>
+<p style="color:white; font-family: Arial Unicode MS,Arial,sans-serif;
+    font-size: 12px; text-align: center;"">Copyright © 2012-2015 VMware, Inc. All rights reserved.</p>
+</footer>
+</div>
+ </div>

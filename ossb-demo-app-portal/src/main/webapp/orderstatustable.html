@@ -1,0 +1,62 @@
+
+<div>
+<style>
+body {
+    background-image: url("images/page_background_inner.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+header {
+    margin: -8px;
+    padding: 20px;
+}
+</style>
+
+<div ng-include="'cartbar.html'"></div>
+<div id="div_content">
+<div id="div_container">
+        <!-- HTML5 TABLE FORMATTED VIA CSS3-->
+        <table class="formatHTML5">
+
+            <!-- TABLE HEADER-->
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Created</th>
+                    <th>Customer</th>
+                    <th>Payment Method</th>
+                    <th>Total</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            <!-- TABLE BODY: MAIN CONTENT-->
+            <tbody>
+            <tr ng-repeat="x in orderlist | orderBy : '-orderId'">
+					<td>{{ x.orderId }}</td>
+					<td>{{x.orderDate | date:'yyyy-MM-dd'}}</td>
+					<td>{{ x.customerName }}</td>
+					<td>{{getPaymentMethod(x.orderId)}}</td>
+					<td>{{getAmount(x.orderLineBVOList) | currency}}</td>
+					<td>
+						<span ng-if = "isAddStyle(x.statusId)">
+						  <button style="background-color: #eed31e; border: medium none; color: white; width: 5.9em;">{{getOrderStatus(x.statusId)}}</button>
+						</span>
+						<span ng-if = "!isAddStyle(x.statusId)">
+							<button>{{getOrderStatus(x.statusId)}}</button>
+						</span>
+					</td>
+				</tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<div class="login-page-footer">
+<footer>
+<p style="color:white; font-family: Arial Unicode MS,Arial,sans-serif;
+    font-size: 12px; margin:21px; text-align: center;"">Copyright © 2012-2015 VMware, Inc. All rights reserved.</p>
+</footer>
+</div>
+</div>

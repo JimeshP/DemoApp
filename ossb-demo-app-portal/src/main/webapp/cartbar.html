@@ -1,0 +1,17 @@
+<header>
+	<img src="images/login_page_logo.png">
+</header>
+
+
+<div class="welcome_user_bar" ng-controller="cartBarController">
+	<div class="welcome_user">
+		<button ng-click="goToOrderPage()">Order Status</button>
+		<button ng-show="isDisplayProdPage()" ng-click="goToProdPage()">Product Page</button>
+		<button ng-show="isDisplayProcessOrder()" ng-click="processOrder()">Process Order</button>
+	</div>
+	<div class="payment_cart" ng-click="cartClicked()"></div>
+	<div class="items_in_cart">
+		<span style="color: blue">{{cartList.length}}</span> Items in your
+		cart
+	</div>
+</div>

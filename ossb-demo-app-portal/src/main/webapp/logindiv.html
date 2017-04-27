@@ -1,0 +1,29 @@
+
+<div class="login-block-header"></div>
+
+
+<div class="demo-app-logo"></div>
+<div class="demo-app-logo_text"><span style="text-align:center; font-size: 18px; font-weight: normal; color: #6f6f6f; font-family: proxima-nova, sans-serif; margin-left: 6px;">Welcome to</span> <br/> <span style="text-align:center; font-size: 24px; font-weight: normal; color: #0c78b0; font-family: proxima-nova, sans-serif;">Demo App</span></div>
+
+<div class="login-block">
+<div class="login-block-image"></div>
+    <h1>User Login</h1>
+    <div ng-if = "invalidUser" style="color:red;">
+    	{{invalidUser}}
+    </div>
+    
+    <input type="text" id="username" ng-model="user.username" />
+    <input type="password" id="password" ng-model="user.password"/>
+
+   <!--   <div class="login_block_button"></div> -->
+   <button class="login_block_button" ng-click="validateLogin()"></button> 
+   
+    <div class="register_link_div">
+    <span style="text-align:center; font-size: 18px; font-weight: normal; color: #555656; font-family: proxima-nova, sans-serif;">New user?</span> <a href="#/registration" class="register_link" id="register"><span style="text-align:center; font-size: 18px; font-weight: normal;
+Color: #0c78b0; font-family: proxima-nova, sans-serif;">Register Now</span></a>
+    </div> 
+</div>
+</div>
+<div class="login-page-footer">
+<p style="color: #484949; font-family: proxima-nova, sans-serif; font-weight: normal; font-size: 14px; text-align: center;">Copyright © 2012-2015 VMware, Inc. All rights reserved.</p>
+</div>

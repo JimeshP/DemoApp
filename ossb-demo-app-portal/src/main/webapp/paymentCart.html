@@ -1,0 +1,73 @@
+
+<div>
+<style>
+body {
+    background-image: url("images/page_background_inner.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+header {
+    margin: -8px;
+    padding: 20px;
+}
+</style>
+
+<div ng-include="'cartbar.html'"></div>
+
+<div id="payment_cart_div_content">
+    <div id="payment_cart_div_container">
+        <div class="check_out_process"><div class="check_out_img_div"></div><span class="check_out_process_text">Check Out Process</span>
+        </div>
+        <div class="check_out_process_workflow">
+            <div class="step1_details_div"><span class="step1">1</span><span class="cart_details_text">Cart Details</span></div>
+            <div class="step2_details_div"><span class="step2" style="background-color: #a4d332;">2</span><span class="cart_details_text">Review Order</span></div>
+            <div class="step3_details_div"><span class="step3">3</span><span class="order_created_text">Order Created</span></div>
+        </div>
+        <div class="div_review_order_and_pay"><span class="review_order_and_pay_text">Review Order Details & Pay</span>
+        </div>
+        <div class="div_address_details">
+           <div class="div_address_table">
+               <div class="row">
+                   <div class="cell">
+                       Street Address<br/>
+                       <input type="text" value="custAddress.addressFirstLine" placeholder="" id="street" ng-model="custAddress.addressFirstLine"/>
+                   </div>
+                   <div class="cell">
+                       City<br/>
+                       <input type="text" value="custAddress.city" placeholder="" id="city" ng-model="custAddress.city"/>
+                   </div>
+               </div>
+               <div class="row">
+                   <div class="cell">
+                       State<br/>
+                       <input type="text" value="custAddress.state" placeholder="" id="state" ng-model="custAddress.state"/>
+                   </div>
+                   <div class="cell">
+                       Zip<br/>
+                       <input type="text" value="custAddress.zipCode" placeholder="" id="zip" ng-model="custAddress.zipCode"/>
+                   </div>
+               </div>
+               <div class="row">
+                   <div class="cell">
+                   </div>
+                   <div class="cell" id="button_cell">
+                       <div class="button_div">
+                           <button ng-click="backBtn()" id="back">Back</button>
+                           <button ng-click="continueBtn()" id="continue">Continue</button>
+                       </div>
+                   </div>
+               </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="login-page-footer">
+<footer>
+<p style="color:white; font-family: Arial Unicode MS,Arial,sans-serif;
+    font-size: 12px; margin:21px; text-align: center;"">Copyright © 2012-2015 VMware, Inc. All rights reserved.</p>
+</footer>
+</div>
+
+</div>

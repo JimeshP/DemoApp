@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html ng-app="myApp">
+<head>
+<style>
+body {
+    background-attachment: fixed;
+    #background-color: #d9d7d9;
+    background-image: url("images/page_background.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+header
+{    background-color: #3989c7;
+    margin: -8px;
+    padding: 8px;
+}
+
+html {
+    overflow: hidden;
+}
+
+</style>
+<script data-require="angular.js@1.4.6" data-semver="1.4.6"
+	src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.6/angular.min.js"></script>
+<script data-require="angular-route@*" data-semver="1.4.6"
+	src="https://code.angularjs.org/1.4.6/angular-route.js"></script>
+	<script type="text/javascript" src="script/app.js"></script>
+	<script type="text/javascript" src="script/vraservices.js"></script>
+<script type="text/javascript" src="script/vrademo.js"></script>
+<script type="text/javascript" src="script/countries.js"></script>  
+<link rel="stylesheet" type="text/css" href="vra.css">
+<link rel="stylesheet" type="text/css" href="register.css">
+</head>
+
+<body>
+<div ng-view></div>
+
+</body>
+</html>

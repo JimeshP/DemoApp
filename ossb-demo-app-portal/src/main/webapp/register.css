@@ -1,0 +1,211 @@
+body {
+    background-attachment: fixed;
+    #background-color: #d9d7d9;
+    background-image: url("images/page_background.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+header
+{    background-color: #3989c7;
+    margin: -8px;
+    padding: 8px;
+}
+
+html {
+    overflow: hidden;
+}
+
+.register_block_button {
+    background-image: url("images/register_btn.png");
+    background-repeat: no-repeat;
+    background-size: 324px 42px;
+    cursor: pointer;
+    height: 46px;
+    width: 100%;
+}
+
+.login-block {
+    #background: #fff none repeat scroll 0 0;
+    border-radius: 0 0 5px 5px;
+    margin: auto;
+    padding: 20px;
+    width: 320px;
+}
+
+.register-block{
+    #background: #fff none repeat scroll 0 0;
+    border-radius: 0 0 5px 5px;
+    margin: auto;
+    padding: 20px;
+    width: 320px;
+}
+
+.register-body h1 {
+	color: #0d7ab3;
+    text-align: center;
+    font-size: 16px;
+    font-family: proxima-nova, sans-serif;
+    font-weight: normal;
+    text-transform: ;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.register-block h2 {
+    text-align: left;
+    font-size: 16px;
+    font-family: proxima-nova, sans-serif;
+    font-weight: normal;
+    text-transform: ;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.register-block h4 {
+    text-align: left;
+    color: #0d7ab3;
+    font-size: 12px;
+    font-family: proxima-nova, sans-serif;
+    font-weight: normal;
+    text-transform: ;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.login-block input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-family: proxima-nova;
+    font-size: 15px;
+    height: 42px;
+    margin-bottom: 10px;
+    outline: medium none;
+    padding: 0 20px 0 50px;
+}
+
+.register-block input {
+	display: inline-block;
+	float:center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-family: proxima-nova;
+    font-size: 15px;
+    height: 20px;
+    margin-bottom: 10px;
+    outline: medium none;
+    padding: 0 20px 0 50px;
+}
+
+.register-block select {
+display: inline-block;
+	float:center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-family: proxima-nova;
+    font-size: 15px;
+    height: 20px;
+    margin-bottom: 10px;
+    outline: medium none;
+    padding: 0 20px 0 10px;
+	width:150px;
+	
+}
+
+.demo-app-logo_text {
+    float: left;
+    height: 91px;
+    margin-left: -97px;
+    margin-top: 178px;
+    width: 117px;
+}
+.demo-app-logo {
+    background-image: url("images/welcome_img.png");
+    background-repeat: no-repeat;
+    float: left;
+    height: 91px;
+    margin-left: 300px;
+    margin-top: 82px;
+    width: 80px;
+}
+
+.demo-app-logo_text {
+    float: left;
+    height: 91px;
+    margin-left: -97px;
+    margin-top: 178px;
+    width: 117px;
+}
+
+.register-block-image {
+    background-image: url("images/register_icon.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 50px;
+}
+
+
+.register-block  input#username {
+   background: #93918b url("images/login_icon.png") no-repeat scroll 19px center / 16px 18px;
+}
+.register-block  input#firstname {
+    width: 117px;
+	   padding: 0 20px 0 10px;
+}
+
+.register-block  input#lastname {
+    width: 117px;
+	   padding: 0 20px 0 10px;
+}
+
+.register-block  input#city {
+    width: 117px;
+	   padding: 0 20px 0 10px;
+}
+
+.register-block  input#zipcode{
+    width: 117px;
+	   padding: 0 20px 0 10px;
+}
+.register-block  input#addressfirstline{
+		width: 250px;
+	   padding: 0 20px 0 10px;
+}
+
+.register-block  input#addresssecondline{
+    	width: 250px;
+	   padding: 0 20px 0 10px;
+}
+.register-block  input{
+   background: #93918b no-repeat scroll 19px center / 16px 18px;
+}
+
+.register-block  select{
+   background: #93918b no-repeat scroll 19px center / 16px 18px;
+}
+
+.register-block  input#username:focus {
+   background: #93918b url("images/login_icon.png") no-repeat scroll 19px center / 16px 18px;
+}
+
+.register-block  input#password {
+    background: #93918b url("images/password_icon.png") no-repeat scroll 19px center / 16px 18px;
+}
+
+.register-block  input#password:focus {
+    background: #93918b url("images/password_icon.png") no-repeat scroll 19px center / 16px 18px;
+}
+
+.register-block  input:active, .login-block input:focus {
+    #border: 1px solid #ff656c;
+}
