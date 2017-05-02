@@ -50,12 +50,6 @@
 		 <goals>
 		 <goal>deploy</goal>
 		 </goals>
-		 <configuration>
-		 <hostname>10.112.12.2</hostname>
-		 <port>9999</port>
-		 <username>aaa</username>
-		 <password>xxx</password>
-		 </configuration>
 		 </execution>
 		 </executions>
 		 </plugin>
