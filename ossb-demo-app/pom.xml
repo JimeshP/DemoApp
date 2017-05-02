@@ -39,20 +39,20 @@
 	</properties>
 	<description>Demo E-Commerce App for VMware.</description>
  <build>
-	 <plugins>
-		 <plugin>
-		 <groupId>org.jboss.as.plugins</groupId>
-		 <artifactId>jboss-as-maven-plugin</artifactId>
-		 <version>7.1.0.Final</version>
-		 <executions>
-		 <execution>
-		 <phase>install</phase>
-		 <goals>
-		 <goal>deploy</goal>
-		 </goals>
-		 </execution>
-		 </executions>
-		 </plugin>
-	 </plugins>
+	<plugins>
+	  <plugin>
+                <groupId>org.jboss.as.plugins</groupId>
+                <artifactId>jboss-as-maven-plugin</artifactId>
+                <version>7.9.Final</version>
+                <executions>
+                    <execution>
+                        <phase>install</phase>
+                        <goals>
+                            <goal>deploy</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+     </plugins>
  </build>
 </project>
