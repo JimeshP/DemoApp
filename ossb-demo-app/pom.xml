@@ -38,21 +38,12 @@
 		<activemq-spring-version>5.8.0</activemq-spring-version>
 	</properties>
 	<description>Demo E-Commerce App for VMware.</description>
- <build>
+  <build>
 	<plugins>
-	  <plugin>
-                <groupId>org.jboss.as.plugins</groupId>
-                <artifactId>jboss-as-maven-plugin</artifactId>
-                <version>7.9.Final</version>
-                <executions>
-                    <execution>
-                        <phase>install</phase>
-                        <goals>
-                            <goal>deploy</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
+      <plugin>
+        <groupId>org.codehaus.cargo</groupId>
+        <artifactId>cargo-maven2-plugin</artifactId>
+      </plugin>
      </plugins>
  </build>
 </project>
