@@ -40,10 +40,33 @@
 	<description>Demo E-Commerce App for VMware.</description>
   <build>
 	<plugins>
-      <plugin>
-        <groupId>org.codehaus.cargo</groupId>
-        <artifactId>cargo-maven2-plugin</artifactId>
-      </plugin>
+                              <plugin>
+                                <groupId>org.codehaus.cargo</groupId>
+                                <artifactId>cargo-maven2-plugin</artifactId>
+                                <version>1.2.0</version>
+                                <configuration>
+                                        <container>
+                                                <containerId>jboss7x</containerId>
+                                                <type>remote</type>
+                                        </container>
+                                </configuration>
+                                <executions>
+                                        <execution>
+                                                <id>deploy</id>
+                                                <phase>install</phase>
+                                                <goals>
+                                                        <goal>redeploy</goal>
+                                                </goals>
+                                        </execution>
+                                </executions>
+                                <dependencies>
+                                        <dependency>
+                                                <groupId>org.jboss.as</groupId>
+                                                <artifactId>jboss-as-controller-client</artifactId>
+                                                <version>7.1.0.Final</version>
+                                        </dependency>
+                                </dependencies>
+                        </plugin>
      </plugins>
  </build>
 </project>
