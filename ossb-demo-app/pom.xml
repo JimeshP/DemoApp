@@ -38,13 +38,4 @@
 		<activemq-spring-version>5.8.0</activemq-spring-version>
 	</properties>
 	<description>Demo E-Commerce App for VMware.</description>
-    <build>
-	  <plugins>
-	    <plugin>
-	      <groupId>org.jboss.as.plugins</groupId>
-	      <artifactId>jboss-as-maven-plugin</artifactId>
-	      <version>7.4.Final</version>
-	    </plugin>
-	  </plugins>
-    </build>
 </project>
