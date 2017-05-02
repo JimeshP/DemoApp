@@ -38,4 +38,27 @@
 		<activemq-spring-version>5.8.0</activemq-spring-version>
 	</properties>
 	<description>Demo E-Commerce App for VMware.</description>
+ <build>
+	 <plugins>
+		 <plugin>
+		 <groupId>org.jboss.as.plugins</groupId>
+		 <artifactId>jboss-as-maven-plugin</artifactId>
+		 <version>7.1.0.Final</version>
+		 <executions>
+		 <execution>
+		 <phase>install</phase>
+		 <goals>
+		 <goal>deploy</goal>
+		 </goals>
+		 <configuration>
+		 <hostname>10.112.12.2</hostname>
+		 <port>9999</port>
+		 <username>aaa</username>
+		 <password>xxx</password>
+		 </configuration>
+		 </execution>
+		 </executions>
+		 </plugin>
+	 </plugins>
+ </build>
 </project>
