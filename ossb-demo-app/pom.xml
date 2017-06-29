@@ -16,7 +16,7 @@
 		<demo-app-version>1.0.0</demo-app-version>
 		<skipTests>true</skipTests>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<spring-version>4.3.7.RELEASE</spring-version>
+		<spring-version>4.3.9.RELEASE</spring-version>
 		<logback-version>1.0.1</logback-version>
 		<servletapi-version>2.5</servletapi-version>
 		<slf4j-version>1.6.6</slf4j-version>
