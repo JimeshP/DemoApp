@@ -133,6 +133,7 @@
 				<artifactId>maven-war-plugin</artifactId>
 				<configuration>
 					<verbose>true</verbose>
+					<failOnMissingWebXml>false</failOnMissingWebXml>
 					<webappDirectory>${project.build.directory}/${project.build.finalName}</webappDirectory>
 					<warSourceDirectory>${basedir}/war</warSourceDirectory>
 					<webXml>${basedir}/war/WEB-INF/web.xml</webXml>
