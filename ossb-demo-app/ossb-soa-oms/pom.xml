@@ -12,7 +12,7 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<parent>
 		<groupId>ossb-vra-demo-app</groupId>
 		<artifactId>demo-app</artifactId>
-		<version>1.0.0</version>
+		<version>1.0.1</version>
 	</parent>
 
 	<modules>

@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>ossb-vra-demo-app</groupId>
 	<artifactId>demo-app</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<packaging>pom</packaging>
 	<name>ossb-vra-demo-app</name>
 	<modules>
@@ -13,7 +13,7 @@
 		<module>ossb-demo-app-portal</module>
 	</modules>
 	<properties>
-		<demo-app-version>1.0.0</demo-app-version>
+		<demo-app-version>1.0.1</demo-app-version>
 		<skipTests>true</skipTests>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<spring-version>4.3.9.RELEASE</spring-version>

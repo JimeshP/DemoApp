@@ -34,7 +34,7 @@
 		<dependency>
 			<groupId>ossb-cms-service-component</groupId>
 			<artifactId>ossb-cms-service-component</artifactId>
-			<version>1.0.0</version>
+			<version>${demo-app-version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -147,4 +147,5 @@
 		</plugins>
 	</build>
 	<profiles />
+	<version>${demo-app-version}</version>
 </project>
