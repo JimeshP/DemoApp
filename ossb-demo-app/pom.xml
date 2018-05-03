@@ -37,5 +37,5 @@
 		<activemq-version>5.4.2</activemq-version>
 		<activemq-spring-version>5.8.0</activemq-spring-version>
 	</properties>
-	<description>Demo E-Commerce App.</description>
+	<description>Demo E-Commerce App based on SOA</description>
 </project>
