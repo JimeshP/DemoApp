@@ -3,6 +3,7 @@
 	var vraservice = function($http) {
 		
 		var server = location.host;
+		console.log("Server ID:"+ server);
 		var serverURL = 'http://' + server;
 		
 		
